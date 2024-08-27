@@ -1,0 +1,10 @@
+C:\sinan\ToyProjects\TestAppDotnetFramawork\PemDosyaProject\bin\Debug\PemDosyaProject.dll
+C:\sinan\ToyProjects\TestAppDotnetFramawork\PemDosyaProject\bin\Debug\PemDosyaProject.pdb
+C:\sinan\ToyProjects\TestAppDotnetFramawork\PemDosyaProject\bin\Debug\BouncyCastle.Crypto.dll
+C:\sinan\ToyProjects\TestAppDotnetFramawork\PemDosyaProject\obj\Debug\PemDosyaProject.csproj.CoreCompileInputs.cache
+C:\sinan\ToyProjects\TestAppDotnetFramawork\PemDosyaProject\obj\Debug\PemDosyaProject.csproj.CopyComplete
+C:\sinan\ToyProjects\TestAppDotnetFramawork\PemDosyaProject\obj\Debug\PemDosyaProject.dll
+C:\sinan\ToyProjects\TestAppDotnetFramawork\PemDosyaProject\obj\Debug\PemDosyaProject.pdb
+C:\sinan\ToyProjects\TestAppDotnetFramawork\PemDosyaProject\obj\Debug\PemDosyaProject.csproj.AssemblyReference.cache
+C:\sinan\ToyProjects\TestAppDotnetFramawork\PemDosyaProject\bin\Debug\Pems\private.pem
+C:\sinan\ToyProjects\TestAppDotnetFramawork\PemDosyaProject\bin\Debug\Pems\public_key.pem
