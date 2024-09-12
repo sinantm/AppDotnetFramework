@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsoap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="urn:sap-com:document:sap:soap:functions:mc-style" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:n1="urn:sap-com:document:sap:rfc:functions" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" targetNamespace="urn:sap-com:document:sap:soap:functions:mc-style" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>
+    <sidl:sidl xmlns:sidl="http://www.sap.com/2007/03/sidl" />
+  </wsdl:documentation>
+  <wsp:UsingPolicy wsdl:required="true" />
+  <wsp:Policy wsu:Id="BN__YNE_WS_MTBKT_RESULT_NEW">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+        <saptrnbnd:OptimizedMimeSerialization xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" wsp:Optional="true" />
+        <wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" wsp:Optional="true" />
+        <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+          <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+            <wsp:Policy>
+              <sp:TransportToken>
+                <wsp:Policy>
+                  <sp:HttpsToken>
+                    <wsp:Policy>
+                      <sp:HttpBasicAuthentication />
+                    </wsp:Policy>
+                  </sp:HttpsToken>
+                </wsp:Policy>
+              </sp:TransportToken>
+              <sp:AlgorithmSuite>
+                <wsp:Policy>
+                  <sp:Basic128Rsa15 />
+                </wsp:Policy>
+              </sp:AlgorithmSuite>
+              <sp:Layout>
+                <wsp:Policy>
+                  <sp:Strict />
+                </wsp:Policy>
+              </sp:Layout>
+            </wsp:Policy>
+          </sp:TransportBinding>
+        </wsp:All>
+      </wsp:All>
+      <wsp:All>
+        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+        <saptrnbnd:OptimizedXMLTransfer uri="http://xml.sap.com/2006/11/esi/esp/binxml" xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/" wsp:Optional="true" />
+        <wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" wsp:Optional="true" />
+        <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+          <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+            <wsp:Policy>
+              <sp:TransportToken>
+                <wsp:Policy>
+                  <sp:HttpsToken>
+                    <wsp:Policy>
+                      <sp:HttpBasicAuthentication />
+                    </wsp:Policy>
+                  </sp:HttpsToken>
+                </wsp:Policy>
+              </sp:TransportToken>
+              <sp:AlgorithmSuite>
+                <wsp:Policy>
+                  <sp:Basic128Rsa15 />
+                </wsp:Policy>
+              </sp:AlgorithmSuite>
+              <sp:Layout>
+                <wsp:Policy>
+                  <sp:Strict />
+                </wsp:Policy>
+              </sp:Layout>
+            </wsp:Policy>
+          </sp:TransportBinding>
+        </wsp:All>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="BN__YNE_WS_MTBKT_RESULT_NEW_soap12">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+        <saptrnbnd:OptimizedMimeSerialization xmlns:saptrnbnd="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization" wsp:Optional="true" />
+        <wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" wsp:Optional="true" />
+        <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+          <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+            <wsp:Policy>
+              <sp:TransportToken>
+                <wsp:Policy>
+                  <sp:HttpsToken>
+                    <wsp:Policy>
+                      <sp:HttpBasicAuthentication />
+                    </wsp:Policy>
+                  </sp:HttpsToken>
+                </wsp:Policy>
+              </sp:TransportToken>
+              <sp:AlgorithmSuite>
+                <wsp:Policy>
+                  <sp:Basic128Rsa15 />
+                </wsp:Policy>
+              </sp:AlgorithmSuite>
+              <sp:Layout>
+                <wsp:Policy>
+                  <sp:Strict />
+                </wsp:Policy>
+              </sp:Layout>
+            </wsp:Policy>
+          </sp:TransportBinding>
+        </wsp:All>
+      </wsp:All>
+      <wsp:All>
+        <sapattahnd:Enabled xmlns:sapattahnd="http://www.sap.com/710/features/attachment/">false</sapattahnd:Enabled>
+        <saptrnbnd:OptimizedXMLTransfer uri="http://xml.sap.com/2006/11/esi/esp/binxml" xmlns:saptrnbnd="http://www.sap.com/webas/710/soap/features/transportbinding/" wsp:Optional="true" />
+        <wsaw:UsingAddressing xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" wsp:Optional="true" />
+        <wsp:All xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
+          <sp:TransportBinding xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sapsp="http://www.sap.com/webas/630/soap/features/security/policy" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:wst="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex">
+            <wsp:Policy>
+              <sp:TransportToken>
+                <wsp:Policy>
+                  <sp:HttpsToken>
+                    <wsp:Policy>
+                      <sp:HttpBasicAuthentication />
+                    </wsp:Policy>
+                  </sp:HttpsToken>
+                </wsp:Policy>
+              </sp:TransportToken>
+              <sp:AlgorithmSuite>
+                <wsp:Policy>
+                  <sp:Basic128Rsa15 />
+                </wsp:Policy>
+              </sp:AlgorithmSuite>
+              <sp:Layout>
+                <wsp:Policy>
+                  <sp:Strict />
+                </wsp:Policy>
+              </sp:Layout>
+            </wsp:Policy>
+          </sp:TransportBinding>
+        </wsp:All>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="IF__YNE_WS_MTBKT_RESULT_NEW">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sapsession:Session xmlns:sapsession="http://www.sap.com/webas/630/soap/features/session/">
+          <sapsession:enableSession>false</sapsession:enableSession>
+        </sapsession:Session>
+        <sapcentraladmin:CentralAdministration xmlns:sapcentraladmin="http://www.sap.com/webas/700/soap/features/CentralAdministration/" wsp:Optional="true">
+          <sapcentraladmin:BusinessApplicationID>005056BD4BBC1EEEBEE82A9B683A9B0F</sapcentraladmin:BusinessApplicationID>
+        </sapcentraladmin:CentralAdministration>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="OP__YneMtbktResultNew">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <saptrhnw05:required xmlns:saptrhnw05="http://www.sap.com/NW05/soap/features/transaction/">no</saptrhnw05:required>
+        <sapcomhnd:enableCommit xmlns:sapcomhnd="http://www.sap.com/NW05/soap/features/commit/">false</sapcomhnd:enableCommit>
+        <sapblock:enableBlocking xmlns:sapblock="http://www.sap.com/NW05/soap/features/blocking/">true</sapblock:enableBlocking>
+        <saprmnw05:enableWSRM xmlns:saprmnw05="http://www.sap.com/NW05/soap/features/wsrm/">false</saprmnw05:enableWSRM>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema xmlns:tns="urn:sap-com:document:sap:rfc:functions" attributeFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:rfc:functions">
+      <xsd:simpleType name="char1">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="1" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char10">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="10" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char20">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="20" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char241">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="241" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char250">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="250" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char255">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="255" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char40">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="40" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char50">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="50" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="char80">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="80" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="cuky5">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="5" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="curr23.2">
+        <xsd:restriction base="xsd:decimal">
+          <xsd:totalDigits value="23" />
+          <xsd:fractionDigits value="2" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="decimal9.5">
+        <xsd:restriction base="xsd:decimal">
+          <xsd:totalDigits value="9" />
+          <xsd:fractionDigits value="5" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="lang">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="1" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:simpleType name="string">
+        <xsd:restriction base="xsd:string" />
+      </xsd:simpleType>
+    </xsd:schema>
+    <xsd:schema xmlns:n0="urn:sap-com:document:sap:rfc:functions" attributeFormDefault="qualified" targetNamespace="urn:sap-com:document:sap:soap:functions:mc-style">
+      <xsd:import namespace="urn:sap-com:document:sap:rfc:functions" />
+      <xsd:simpleType name="RfcException.Message.Number">
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value="3" />
+          <xsd:pattern value="\d*" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="YneMtbktSBformSf">
+        <xsd:sequence>
+          <xsd:element name="BaseBa" type="n0:curr23.2" />
+          <xsd:element name="CountBa" type="xsd:int" />
+          <xsd:element name="BaseBs" type="n0:curr23.2" />
+          <xsd:element name="CountBs" type="xsd:int" />
+          <xsd:element name="Tvbas" type="n0:curr23.2" />
+          <xsd:element name="Tvste" type="n0:curr23.2" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="YneMtbktSCformSf">
+        <xsd:sequence>
+          <xsd:element name="Xsum" type="n0:char1" />
+          <xsd:element name="Ltext" type="n0:char40" />
+          <xsd:element name="Akont" type="n0:char10" />
+          <xsd:element name="Dmbtr" type="n0:curr23.2" />
+          <xsd:element name="Wrbtr" type="n0:curr23.2" />
+          <xsd:element name="Waers" type="n0:cuky5" />
+          <xsd:element name="Kursf" type="n0:decimal9.5" />
+          <xsd:element name="DebitCredit" type="n0:char10" />
+          <xsd:element name="DmbtrC" type="n0:curr23.2" />
+          <xsd:element name="WrbtrC" type="n0:curr23.2" />
+          <xsd:element name="WaersC" type="n0:cuky5" />
+          <xsd:element name="Cari" type="n0:char10" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="YneMtbktSKformSf">
+        <xsd:sequence>
+          <xsd:element name="TevkCountBs" type="xsd:int" />
+          <xsd:element name="TevkBaseBs" type="n0:curr23.2" />
+          <xsd:element name="TevkCurrBs" type="n0:curr23.2" />
+          <xsd:element name="TevkCountBa" type="xsd:int" />
+          <xsd:element name="TevkBaseBa" type="n0:curr23.2" />
+          <xsd:element name="TevkCurrBa" type="n0:curr23.2" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RfcException.Message">
+        <xsd:sequence>
+          <xsd:element name="ID" type="xsd:string" />
+          <xsd:element name="Number" type="tns:RfcException.Message.Number" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="YneMtbktResultNew.RfcException">
+        <xsd:sequence>
+          <xsd:element name="Name" type="tns:YneMtbktResultNew.RfcExceptions" />
+          <xsd:element minOccurs="0" name="Text" type="xsd:string" />
+          <xsd:element minOccurs="0" name="Message" type="tns:RfcException.Message" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="YneMtbktTtCformSf">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="item" type="tns:YneMtbktSCformSf" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:simpleType name="YneMtbktResultNew.RfcExceptions">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="NotFound" />
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:element name="YneMtbktResultNew.Exception" type="tns:YneMtbktResultNew.RfcException" />
+      <xsd:element name="YneMtbktResultNew">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="0" name="IAnswer" type="n0:char1" />
+            <xsd:element minOccurs="0" name="IFile_1" type="n0:char255" />
+            <xsd:element minOccurs="0" name="IFile_2" type="n0:char255" />
+            <xsd:element minOccurs="0" name="IIp" type="n0:char20" />
+            <xsd:element minOccurs="0" name="INoData" type="n0:char1" />
+            <xsd:element minOccurs="0" name="IRandid" type="n0:char50" />
+            <xsd:element minOccurs="0" name="IRpmail" type="n0:char241" />
+            <xsd:element minOccurs="0" name="ISpras" type="n0:lang" />
+            <xsd:element minOccurs="0" name="ITerminal" type="n0:char20" />
+            <xsd:element minOccurs="0" name="IText" type="n0:string" />
+            <xsd:element minOccurs="0" name="IUnvan" type="n0:string" />
+            <xsd:element minOccurs="0" name="IUser" type="n0:char80" />
+            <xsd:element minOccurs="0" name="IsBform" type="tns:YneMtbktSBformSf" />
+            <xsd:element minOccurs="0" name="IsKform" type="tns:YneMtbktSKformSf" />
+            <xsd:element minOccurs="0" name="ItCform" type="tns:YneMtbktTtCformSf" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="YneMtbktResultNewResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="EText" type="n0:char250" />
+            <xsd:element name="EtCform" type="tns:YneMtbktTtCformSf" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="YneMtbktResultNew">
+    <wsdl:part name="parameters" element="tns:YneMtbktResultNew" />
+  </wsdl:message>
+  <wsdl:message name="YneMtbktResultNewResponse">
+    <wsdl:part name="parameter" element="tns:YneMtbktResultNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="YneMtbktResultNew.Exception">
+    <wsdl:part name="YneMtbktResultNew.Exception" element="tns:YneMtbktResultNew.Exception" />
+  </wsdl:message>
+  <wsdl:portType name="YNE_WS_MTBKT_RESULT_NEW">
+    <wsdl:documentation>
+      <sapdoc:sapdoc xmlns:sapdoc="urn:sap:esi:documentation">
+        <sapdoc:docitem docURL="http://S4ERPAPPQA.sampa.com:8000/sap/bc/esdt/docu/sd_text?sap-client=400&amp;sd_name=YNE_WS_MTBKT_RESULT_NEW" />
+      </sapdoc:sapdoc>
+    </wsdl:documentation>
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#IF__YNE_WS_MTBKT_RESULT_NEW" />
+    </wsp:Policy>
+    <wsdl:operation name="YneMtbktResultNew">
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP__YneMtbktResultNew" />
+      </wsp:Policy>
+      <wsdl:input message="tns:YneMtbktResultNew" />
+      <wsdl:output message="tns:YneMtbktResultNewResponse" />
+      <wsdl:fault name="YneMtbktResultNew.Exception" message="tns:YneMtbktResultNew.Exception" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="YNE_WS_MTBKT_RESULT_NEW" type="tns:YNE_WS_MTBKT_RESULT_NEW">
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#BN__YNE_WS_MTBKT_RESULT_NEW" />
+    </wsp:Policy>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="YneMtbktResultNew">
+      <soap:operation soapAction="urn:sap-com:document:sap:soap:functions:mc-style:YNE_WS_MTBKT_RESULT_NEW:YneMtbktResultNewRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="YneMtbktResultNew.Exception">
+        <soap:fault use="literal" name="YneMtbktResultNew.Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="YNE_WS_MTBKT_RESULT_NEW_soap12" type="tns:YNE_WS_MTBKT_RESULT_NEW">
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#BN__YNE_WS_MTBKT_RESULT_NEW_soap12" />
+    </wsp:Policy>
+    <wsoap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="YneMtbktResultNew">
+      <wsoap12:operation soapAction="urn:sap-com:document:sap:soap:functions:mc-style:YNE_WS_MTBKT_RESULT_NEW:YneMtbktResultNewRequest" style="document" />
+      <wsdl:input>
+        <wsoap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <wsoap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="YneMtbktResultNew.Exception">
+        <wsoap12:fault use="literal" name="YneMtbktResultNew.Exception" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="YNE_WS_MTBKT_RESULT_NEW">
+    <wsdl:port name="YNE_WS_MTBKT_RESULT_NEW" binding="tns:YNE_WS_MTBKT_RESULT_NEW">
+      <soap:address location="http://S4ERPAPPQA.sampa.com:8000/sap/bc/srt/rfc/sap/yne_ws_mtbkt_result_new/400/yne_ws_mtbkt_result_new/yne_ws_mtbkt_result_new" />
+    </wsdl:port>
+    <wsdl:port name="YNE_WS_MTBKT_RESULT_NEW_soap12" binding="tns:YNE_WS_MTBKT_RESULT_NEW_soap12">
+      <wsoap12:address location="http://S4ERPAPPQA.sampa.com:8000/sap/bc/srt/rfc/sap/yne_ws_mtbkt_result_new/400/yne_ws_mtbkt_result_new/yne_ws_mtbkt_result_new" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

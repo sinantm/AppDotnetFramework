@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="file:///C:/Users/sinan/Desktop/sampaYeni/YNE_WS_MTBKT_RESULT_NEW/QA/QA_yne_ws_mtbkt_result_new.wsdl" filename="QA_yne_ws_mtbkt_result_new.wsdl" />
+  </Results>
+</DiscoveryClientResultsFile>

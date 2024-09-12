@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TestAppDotnetFramawork.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TestAppDotnetFramawork_ResultNew_YNE_WS_MTBKT_RESULT_NEW" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://S4ERPAPPQA.sampa.com:8000/sap/bc/srt/rfc/sap/yne_ws_mtbkt_result_new/400/yne_ws_mtbkt_result_new/yne_ws_mtbkt_result_new</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
